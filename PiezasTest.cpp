@@ -25,7 +25,7 @@ TEST(PiezasTest, clearBoard)
   temp.reset();
   for(int i = 0; i < BOARD_ROWS; i++){
     for(int j = 0; j < BOARD_COLS; j++){
-      ASSERT_EQ(board[i][j], Blank);
+      ASSERT_EQ(temp.pieceAt(i,j), Blank);
     }
   }
 }
@@ -42,7 +42,7 @@ TEST(PiezasTest, dropTillSwap)
 	Piezas temp;
   temp.dropPiece(0);
   temp.dropPiece(0);
-  ASSERT_EQ(temp.pieceAt(0,1), Y);
+  ASSERT_EQ(temp.pieceAt(0,1), O);
 }
 
 TEST(PiezasTest, dropTillBlank)
