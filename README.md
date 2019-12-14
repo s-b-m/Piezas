@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/s-b-m/Piezas.svg?branch=master)](https://travis-ci.org/s-b-m/Piezas)
+[![Coverage Status](https://coveralls.io/repos/github/s-b-m/Piezas/badge.svg?branch=master)](https://coveralls.io/github/s-b-m/Piezas?branch=master)
 # Piezas
 
 ## Associated Enumerated Types
