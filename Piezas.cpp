@@ -78,7 +78,7 @@ Piece Piezas::dropPiece(int column)
 Piece Piezas::pieceAt(int row, int column)
 {
   if(row < 0 || column < 0 || row > BOARD_ROWS || column > BOARD_COLS){
-    return invalid;
+    return Invalid;
   }
   return board[row][column];
 }
@@ -140,7 +140,6 @@ Piece Piezas::gameState()
         if(currentLineO > longestLineO){
           longestLineO = currentLineO;
         }
-      }
       }
     }
   }
