@@ -24,7 +24,7 @@ Piezas::Piezas()
 {
   for (int i = 0; i < BOARD_ROWS; i++){
     for(int j = 0; j < BOARD_COLS; j++){
-      board[i].insert(Blank);
+      board[i].push_back(Blank);
     }
   }
   turn = X;
