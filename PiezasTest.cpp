@@ -18,6 +18,12 @@ TEST(PiezasTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+TEST(PiezasTest, testReset)
+{
+  Piezas temp;
+  temp.reset();
+  ASSERT_TRUE(true);
+}
 
 TEST(PiezasTest, clearBoard)
 {
