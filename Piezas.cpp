@@ -146,7 +146,7 @@ Piece Piezas::gameState()
   if(longestLineX>longestLineO){
     return X;
   }
-  else if(longestLinex<longestLineO){
+  else if(longestLineX<longestLineO){
     return O;
   }
   else return Blank;
