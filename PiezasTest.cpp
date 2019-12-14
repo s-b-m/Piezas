@@ -22,12 +22,9 @@ TEST(PiezasTest, sanityCheck)
 TEST(PiezasTest, clearBoard)
 {
   Piezas temp;
+  temp.dropPiece(0);
   temp.reset();
-  for(int i = 0; i < BOARD_ROWS; i++){
-    for(int j = 0; j < BOARD_COLS; j++){
-      ASSERT_EQ(temp.pieceAt(i,j), Blank);
-    }
-  }
+  ASSERT_EQ(temp.pieceAt(0,0), Blank);
 }
 
 TEST(PiezasTest, dropEmpty)
